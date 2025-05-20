@@ -29,12 +29,10 @@
         dockerls.enable = true;
         bashls.enable = true;
         nil_ls = {
-          enable = true;
-          settings = {
-            nix = {
-              flake = {
-                autoArchive = true;
-              };
+          enable = true;          
+          nix = {
+            flake = {
+              autoArchive = true;
             };
           };
         };
