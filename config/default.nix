@@ -5,7 +5,6 @@
     ./plugins
     ./keymaps.nix
   ];
-  #clipboard.register = "unnamedplus";
   diagnostics = {
     virtual_lines = {
       only_current_line = true;
