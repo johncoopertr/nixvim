@@ -15,7 +15,7 @@
     mapleader = " ";
     maplocalleader = " ";
   };
-  clipboard = "unnamedplus"; 
+  clipboard.register = "unnamedplus"; 
   extraLuaConfig = ''
     vim.g.clipboard = {
       name = 'OSC 52',
