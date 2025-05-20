@@ -30,9 +30,11 @@
         bashls.enable = true;
         nil_ls = {
           enable = true;          
-          nix = {
-            flake = {
-              autoArchive = true;
+          settings = {
+            nix = {
+              flake = {
+                autoArchive = true;
+              };
             };
           };
         };
