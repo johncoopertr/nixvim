@@ -24,8 +24,8 @@
         ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
       },
       paste = {
-        ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
-        ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
+        ["+"] = no_paste("+"),
+        ["*"] = no_paste("*"),
       },
     }
   '';
