@@ -17,6 +17,8 @@
   };
   clipboard.register = "unnamedplus"; 
   extraConfigLua = ''
+    vim.opt.fileformat = "unix";
+    vim.opt.fileformats = "unix";
     local function paste()
       return {
         vim.fn.split(vim.fn.getreg(""), "\n"),
