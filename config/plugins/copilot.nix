@@ -3,29 +3,13 @@
     # GitHub Copilot integration
     copilot-lua = {
       enable = true;
+      # Disable suggestion and panel modules when using copilot-cmp
+      # to avoid conflicts with blink-cmp completion
       suggestion = {
-        enabled = true;
-        autoTrigger = true;
-        debounce = 75;
-        keymap = {
-          accept = "<M-l>";
-          acceptWord = false;
-          acceptLine = false;
-          next = "<M-]>";
-          prev = "<M-[>";
-          dismiss = "<C-]>";
-        };
+        enabled = false;
       };
       panel = {
-        enabled = true;
-        autoRefresh = false;
-        keymap = {
-          jumpPrev = "[[";
-          jumpNext = "]]";
-          accept = "<CR>";
-          refresh = "gr";
-          open = "<M-CR>";
-        };
+        enabled = false;
       };
       filetypes = {
         yaml = true;
