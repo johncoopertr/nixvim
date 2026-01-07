@@ -38,6 +38,10 @@
           lsp = {
             enabled = true;
           };
+          copilot = {
+            enabled = true;
+            score_offset = 100;
+          };
         };
       };
     }; 

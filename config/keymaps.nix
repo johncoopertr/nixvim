@@ -28,6 +28,10 @@
           {
             "<Space>" = "<NOP>";
 
+            # Copilot/AI keybindings
+            "<leader>cp" = ":lua require('copilot.panel').open()<CR>";
+            "<leader>cs" = ":lua require('copilot.suggestion').toggle_auto_trigger()<CR>";
+
             # Esc to clear search results
             "<esc>" = ":noh<CR>";
 
