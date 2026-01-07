@@ -4,7 +4,7 @@
 
 ### Copilot/LLM Integration
 
-This configuration includes GitHub Copilot integration for AI-powered code completion and suggestions.
+This configuration includes GitHub Copilot integration for AI-powered code completion and suggestions via `blink-cmp`.
 
 #### Setup
 
@@ -12,28 +12,20 @@ To use GitHub Copilot, you need to:
 1. Have a GitHub Copilot subscription
 2. Authenticate with Copilot on first use by running `:Copilot auth` in Neovim
 
-#### Keybindings
-
-**Insert Mode (Suggestions):**
-- `Alt+l` - Accept copilot suggestion
-- `Alt+]` - Next suggestion
-- `Alt+[` - Previous suggestion
-- `Ctrl+]` - Dismiss suggestion
-
-**Normal Mode:**
-- `<leader>cp` - Open copilot panel (space + c + p)
-- `<leader>cs` - Toggle auto-trigger for suggestions (space + c + s)
-
-**Panel Navigation (when panel is open):**
-- `Enter` - Accept selected suggestion
-- `]]` - Jump to next suggestion
-- `[[` - Jump to previous suggestion
-- `gr` - Refresh suggestions
-
 #### How It Works
 
 - Copilot suggestions are automatically integrated into the completion popup via `blink-cmp`
-- Suggestions appear as you type with high priority
-- You can accept suggestions inline or open the panel for more options
-- Auto-trigger is enabled by default but can be toggled with `<leader>cs`
+- Copilot completions appear inline as you type with high priority
+- Suggestions are shown in the completion menu and can be accepted using Tab/Enter (based on super-tab preset)
+- The copilot-lua suggestion and panel modules are disabled to avoid conflicts with the completion engine
+
+#### Keybindings
+
+**Completion (Insert Mode):**
+- `Tab` - Select next completion item or accept suggestion
+- `Shift+Tab` - Select previous completion item
+- `Ctrl+Space` - Manually trigger completion
+- `Ctrl+e` - Close completion menu
+
+Copilot suggestions appear automatically in the completion menu and can be accepted using the standard completion keybindings.
 
