@@ -5,12 +5,12 @@
     ./plugins
     ./keymaps.nix
   ];
-  diagnostics = {
-    virtual_lines = {
-      only_current_line = true;
-    };
-    virtual_text = false;
-  };
+  # diagnostics = {
+  #   virtual_lines = {
+  #     only_current_line = true;
+  #   };
+  #   virtual_text = false;
+  # };
   globals = {
     mapleader = " ";
     maplocalleader = " ";
