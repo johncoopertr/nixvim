@@ -36,7 +36,6 @@
             "lsp"
             "path"
             "buffer"
-            "copilot"
           ];
           providers = {
             buffer = {
@@ -45,19 +44,9 @@
             lsp = {
               enabled = true;
             };
-            copilot = {
-              async = true;
-              module = "blink-cmp-copilot";
-              score_offset = 100;
-            };
           };
         };
-      }; 
-    };
-    
-    # Enable blink-cmp-copilot as a native nixvim plugin
-    blink-cmp-copilot = {
-      enable = true;
+      };
     };
   };
 }
